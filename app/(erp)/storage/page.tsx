@@ -1,0 +1,2 @@
+import {ScreenHeader} from '@/src/components/ScreenHeader'; import {DataTable} from '@/src/components/DataTable';
+export default function Page(){return <><ScreenHeader title="التخزين المبرد — لوحة المؤشرات" subtitle="أرصدة HoldFile الحالية وحساب أيام التخزين حتى اليوم."/><DataTable endpoint="/api/storage" title="البضائع المخزنة حالياً" columns={['CustName','ItemName','LotNo','StoreCode','Location','BalanceQty','TotalWeightKg','ReceiptDate','StorageDays','DailyRate']}/></>}

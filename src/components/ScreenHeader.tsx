@@ -1,0 +1,1 @@
+export function ScreenHeader({title,subtitle,action}:{title:string,subtitle?:string,action?:React.ReactNode}){return <div className="toolbar"><div><h1 className="title">{title}</h1>{subtitle&&<p className="subtitle">{subtitle}</p>}</div>{action}</div>}

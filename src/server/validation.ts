@@ -1,0 +1,3 @@
+import { z } from 'zod';
+export const loginSchema=z.object({username:z.string().trim().min(1),password:z.string().min(1),branchCode:z.coerce.number().int().positive(),financialYear:z.coerce.number().int().min(2000).max(2100)});
+export const customerSchema=z.object({CustCode:z.coerce.number().int().positive(),CustName:z.string().trim().min(1),CustLatName:z.string().optional(),Telephone:z.string().optional(),Mobile:z.string().optional(),Email:z.string().email().optional().or(z.literal('')),StreetArea:z.string().optional(),PersonToConnect:z.string().optional(),CreditLimit:z.coerce.number().nonnegative().optional(),TaxId:z.string().optional(),Branch:z.coerce.number().int().positive(),StorageCustomerYN:z.boolean().optional()});

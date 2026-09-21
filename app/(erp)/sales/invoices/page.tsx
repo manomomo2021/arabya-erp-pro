@@ -1,0 +1,2 @@
+import { ScreenHeader } from '@/src/components/ScreenHeader'; import { DataTable } from '@/src/components/DataTable';
+export default function Page(){return <><ScreenHeader title="فواتير المبيعات" subtitle="Invoice Type = 1 — السنة والفرع مأخوذان من الجلسة العامة."/><DataTable endpoint="/api/invoices" title="فواتير المبيعات" columns={['BranchCode','Year','Serial','TargetCode','InvoiceDate','TotalPrice','VATTax','NetPrice','OpenInvoiceAmount','GAPosted','UserId']}/></>}

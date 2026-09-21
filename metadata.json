@@ -1,0 +1,6 @@
+{
+  "name": "Arabya ERP Pro",
+  "description": "نظام الإدارة المتكامل للشركة العربية - Arabya ERP Pro Enterprise System over ArabyaDB SQL Server",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

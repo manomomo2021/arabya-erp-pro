@@ -1,0 +1,2 @@
+import { NextResponse } from 'next/server'; import { storageBatches } from '@/src/server/db/repositories'; import { authOr401,errorResponse } from '@/src/server/route-helpers';
+export async function GET(req:Request){const a=await authOr401();if('response' in a)return a.response;try{const u=new URL(req.url);const store=u.searchParams.get('store');return NextResponse.json(await storageBatches(store?Number(store):undefined));}catch(e){return errorResponse(e)}}

@@ -1,0 +1,2 @@
+import { GenericModuleScreen } from '@/src/components/GenericModuleScreen';
+export default function Page(){return <GenericModuleScreen title="إنشاء فاتورة مبيعات" subtitle="شاشة مستقلة لإنشاء المستند. لن يتم تنفيذ INSERT في Invoice حتى يتم اعتماد دورة الفاتورة الكاملة والتفاصيل وحركة المخزون والترحيل من النظام القديم." tables={['Invoice','Customer','Items','HoldFile']} columns={['BranchCode','Year','Serial','InvoiceDate','TargetCode','TotalPrice','NetPrice','VATTax','PayType']}/>}

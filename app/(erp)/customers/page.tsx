@@ -1,0 +1,2 @@
+import { ScreenHeader } from '@/src/components/ScreenHeader'; import { DataTable } from '@/src/components/DataTable'; import { CrudCustomer } from '@/src/components/CrudCustomer';
+export default function Page(){return <><ScreenHeader title="دليل العملاء" subtitle="قراءة مباشرة من جدول Customer مع إضافة محكومة بعد التأكيد."/><CrudCustomer/><div style={{height:14}}/><DataTable endpoint="/api/customers" title="العملاء الحاليون" columns={['CustCode','CustName','Mobile','Email','CreditLimit','Balance','Branch','StorageCustomerYN']}/></>}
